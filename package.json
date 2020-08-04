@@ -11,8 +11,8 @@
   "license": "ISC",
   "scripts": {
     "start": "node index.js",
-    "xplatform-build": "cd client && npm install && npm run build && rm -r ../www && ncp build ../www",
-    "heroku-postbuild": "cd client && npm install && npm run build && rm -r ../www && mv build ../www"
+    "xplatform-build": "cd client && npm install && npm run build && ncp build ../www",
+    "heroku-postbuild": "cd client && npm install && npm run build && mv build ../www"
   },
   "devDependencies": {
     "ncp": "2.0.0"
