@@ -1,0 +1,76 @@
+@import '~bootstrap/scss/bootstrap';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import './colors.scss';
+.btn-primary {
+    @include button-variant($primary, darken($primary, 7.5%), darken($primary, 10%), lighten($primary,5%), lighten($primary, 10%), darken($primary,30%));
+}
+
+.App>.container {
+    padding-top: 100px !important;
+}
+.App>.container-fluid{
+    padding-top: 100px !important;
+}
+
+
+body, html {
+    //height: 100%;
+    //width: 100%;
+    //overflow-x: hidden;
+    margin: 0px;
+    background-color: $background;
+    color: $text;
+}
+
+
+
+address {
+    margin-top: 20px;
+}
+
+a {
+    color: $primary;    
+}
+
+a:hover {
+    color: darken($primary, 20);
+}
+
+.sponsor-card {
+    margin-top: 0;
+}
+
+.sponsor-img {
+    width: 100%;
+}
+
+hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.178);
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+}
+.btn-circle.btn-lg {
+    width: 50px;
+    height: 50px;
+    padding: 8px 5px;
+    border-radius: 25px;
+    font-size: 18px;
+    line-height: 1.33;
+}
+
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 34px;
+    line-height: 1.33;
+}

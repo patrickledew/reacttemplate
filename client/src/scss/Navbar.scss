@@ -1,0 +1,31 @@
+@import "colors.scss";
+.navbar {
+    background: $nav-background !important;
+    color: $nav-text-active;
+    z-index: 100;
+    //box-shadow: 0px 2px 10px rgb(255, 136, 0);
+}
+.navbar-brand img {
+    height: 50px !important;
+}
+.nav-link {
+    color: $nav-text-inactive !important;
+}
+.nav-item.active .nav-link {
+    color: $nav-text-active !important;
+}
+a.nav-link:hover {
+    color: $nav-text-active !important;
+}
+
+@media (max-width: 1199px) {
+    .nav-link {
+        font-size: 1.5em;
+    }
+}
+li.nav-item.invisible {
+    width: 0px;
+    height: 0px;
+    padding: 0px;
+    margin: 0px;
+}

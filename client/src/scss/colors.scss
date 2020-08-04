@@ -1,0 +1,26 @@
+//Main colors
+$background: rgb(255, 255, 255);
+$text: #222;
+$text-muted: #666;
+$red: rgb(197, 36, 36);
+$orange: #fd6502;
+$yellow: rgb(231, 199, 54);
+$green: #007d02;
+$blue: rgb(37, 47, 185);
+$violet: rgb(145, 43, 204);
+$white: #FFFFFF;
+$black: #000;
+$primary: $red;
+$secondary: $white;
+
+//Navbar
+$nav-background: rgba($white, 0.5);
+$nav-text-active: $text;
+$nav-text-inactive: $text-muted;
+
+//Footer
+$footer-text: $text-muted;
+
+//Home
+$home-overlay:rgba(253, 123, 123, 0.5);
+$home-gradient: rgb(255, 255, 255)
