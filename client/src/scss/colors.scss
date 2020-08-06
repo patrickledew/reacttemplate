@@ -15,8 +15,9 @@ $secondary: #393e46;
 $tertiary: #222831;
 
 //Navbar
-$nav-background: rgba($white, 0);
-$nav-text-active: $text;
+$nav-background-color: rgba($white, 0);
+$nav-background: none;
+$nav-text-active: $secondary;
 $nav-text-inactive: $text-muted;
 
 //Footer

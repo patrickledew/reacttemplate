@@ -14,7 +14,7 @@ class Routes extends Component {
   
     return (
         <Switch>
-          <Route exact path='/' component={Home} />
+          <Route exact path='/' render={(props) => <Home {...props} cycleImages={false}></Home>} />
           <Route exact path='/contact' component={Contact} />
           <Route path="*" component={Page404}/>
         </Switch>

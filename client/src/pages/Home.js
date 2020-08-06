@@ -6,6 +6,7 @@ import '../scss/Home.scss';
 class Home extends Component {
     constructor(props) {
         super(props);
+        console.log(props);
         const images = [
             'homebackground.jpg'
         ]
@@ -34,10 +35,14 @@ class Home extends Component {
         }, 2000);
     }
     componentDidMount() {
-        setTimeout((() => {
-            this.fadeImage(document.querySelector(".homeimage"));
-            setInterval(this.fadeImage.bind(this, document.querySelector(".homeimage")), 10000);
-        }).bind(this), 6000);
+        console.log(this.props);
+        if (this.props.cycleImages == true)
+        {
+            setTimeout((() => {
+                this.fadeImage(document.querySelector(".homeimage"));
+                setInterval(this.fadeImage.bind(this, document.querySelector(".homeimage")), 10000);
+            }).bind(this), 6000);
+        }
 
         this.state.images.forEach((picture) => { //preload images so they don't take time to load after fade-in starts
             const img = new Image();
@@ -63,12 +68,12 @@ class Home extends Component {
                                 <center>
                                     <Link to="section-1" smooth={true} offset={-100} duration={800}>
                                         <button className="p-2 m-2 btn btn-lg btn-primary quick-button">
-                                            <i className="fas fa-users fa-lg"></i> About
+                                            <i className="fas fa-users fa-lg mr-1"></i> About
                                         </button>
                                     </Link>
                                     <Link to="section-2" smooth={true} duration={800}>
                                         <button className="p-2 m-2 btn btn-lg btn-secondary quick-button">
-                                            <i className="fas fa-dollar-sign fa-lg"></i> Contact
+                                            <i className="fas fa-envelope fa-lg mr-1"></i> Contact
                                         </button>
                                     </Link>
                                 </center>
