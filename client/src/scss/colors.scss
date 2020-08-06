@@ -1,5 +1,5 @@
 //Main colors
-$background: #2d132c;
+$background: #12182d;
 $text: #F8E5EE;
 $text-muted: rgba(248, 248, 248, 0.452);
 $red: rgb(218, 71, 71);
@@ -10,9 +10,12 @@ $blue: rgb(75, 83, 199);
 $violet: rgb(157, 71, 207);
 $white: #FFFFFF;
 $black: #000;
-$primary: #ee4540;
-$secondary: #c72c41;
-$tertiary: #801336;
+$primary: #2f285a;
+$secondary: rgba(0,0,0,0);
+$tertiary: #7690CC;
+
+$link: lighten($primary, 20);
+$link-active: $primary;
 
 //Navbar
 $nav-background-color: rgba($background, 0); 

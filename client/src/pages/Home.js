@@ -61,7 +61,8 @@ class Home extends Component {
                 <Navbar page="home" />
                 <div className="container-fluid p-0">
                         <div className="row landing p-0 m-0">
-                            <div className="homeimage"  style={{"backgroundImage": `url(\"/images/home-background/${this.state.images[this.state.currentImage]}\") `}}></div>
+                            <div className="homeimage"  style={{"backgroundImage": `url(\"/images/home-background/${this.state.images[this.state.currentImage]}\") `}}>
+                            </div>
                             <div className="gradient"></div>
                             <div className="col-md-8 mx-auto my-auto">
                                 <img src="/images/logo-transparent.png" className="d-block img-fluid biglogo"></img>
@@ -73,7 +74,7 @@ class Home extends Component {
                                     </Link>
                                     <Link to="section-2" smooth={true} duration={800}>
                                         <button className="p-2 m-2 btn btn-lg btn-secondary quick-button">
-                                            <i className="fas fa-envelope fa-lg mr-1"></i> Contact
+                                            <i className="fas fa-envelope fa-lg mr-1"></i> More
                                         </button>
                                     </Link>
                                 </center>
@@ -96,6 +97,8 @@ class Home extends Component {
                                     </div>
                                 </div>
                     </section>
+                    <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+                    <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
                 </div>
                 
                 <Footer></Footer>

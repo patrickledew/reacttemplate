@@ -34,11 +34,11 @@ address {
 }
 
 a {
-    color: $primary;    
+    color: $link;    
 }
 
 a:hover {
-    color: darken($primary, 20);
+    color: $link-active;
 }
 
 .sponsor-card {
