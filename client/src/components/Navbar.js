@@ -30,15 +30,10 @@ class Navbar extends Component {
 
     render() {
         return (
-            <nav className="navbar fixed-top navbar-expand">
-                <div className="container-fluid flex-column">
-                    <div className="row">
-                        <div className="col-12">
-                            <a className="navbar-brand mx-auto" href="/"><img src="/images/logo-transparent.png" alt="Logo" /></a>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-12">
+            <nav className="navbar fixed-top navbar-expand p-0">
+                <div className="container-fluid flex mx-5">
+                            <a className="navbar-brand" href="/"><img src="/images/logo-transparent.png" alt="Logo" /></a>
+                      
                             <ul className="navbar-nav mr-auto">
                                 <li className="nav-item" id="home">
                                     <a className="nav-link" href="/">Home</a>
@@ -47,8 +42,7 @@ class Navbar extends Component {
                                     <a className="nav-link" href="/contact">Contact</a>
                                 </li>
                             </ul>
-                        </div>
-                    </div>
+                
                 </div>
             </nav>
         );

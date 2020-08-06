@@ -10,7 +10,7 @@
     justify-self: start;
 }
 .navbar-brand img {
-    filter: invert(1);
+    filter: invert(0);
     height: 50px !important;
 }
 .nav-link {
@@ -18,13 +18,15 @@
 }
 .nav-item {
     margin-left: 10px;
+    font-weight: 300;
 }
 .nav-item.active {
     border-radius: 10px;
     background-color: $primary;
 }
 .nav-item.active .nav-link {
-    color: $nav-text-inactive !important;
+    font-weight: 500;
+    color: lighten($nav-text-inactive, 20) !important;
 }
 a.nav-link:hover {
     color: $nav-text-active !important;
