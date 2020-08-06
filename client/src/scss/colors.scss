@@ -1,26 +1,28 @@
 //Main colors
-$background: rgb(255, 255, 255);
-$text: #222;
-$text-muted: #666;
-$red: rgb(197, 36, 36);
-$orange: #fd6502;
-$yellow: rgb(231, 199, 54);
-$green: #007d02;
-$blue: rgb(37, 47, 185);
-$violet: rgb(145, 43, 204);
+$background: #2d132c;
+$text: #F8E5EE;
+$text-muted: rgba(248, 248, 248, 0.452);
+$red: rgb(218, 71, 71);
+$orange: #f1873f;
+$yellow: rgb(245, 216, 90);
+$green: #4ad14c;
+$blue: rgb(75, 83, 199);
+$violet: rgb(157, 71, 207);
 $white: #FFFFFF;
 $black: #000;
-$primary: $red;
-$secondary: $white;
+$primary: #ee4540;
+$secondary: #c72c41;
+$tertiary: #801336;
 
 //Navbar
-$nav-background: rgba($white, 0.5);
-$nav-text-active: $text;
-$nav-text-inactive: $text-muted;
+$nav-background-color: rgba($background, 0); 
+$nav-background: none;//linear-gradient(to bottom right, $background, lighten($background, 20));
+$nav-text-active: $primary;
+$nav-text-inactive: $text;
 
 //Footer
 $footer-text: $text-muted;
 
 //Home
-$home-overlay:rgba(253, 123, 123, 0.5);
-$home-gradient: rgb(255, 255, 255)
+$home-overlay: rgba($black, 0.5);
+$home-gradient: $background;

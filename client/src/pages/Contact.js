@@ -23,13 +23,13 @@ class Contact extends Component {
                 <div className="col-lg-6 text-center">
                     <a href="mailto:example@example.com">
                         <div className="mb-5">
-                            <button className="btn-circle disabled btn-xl btn-primary mr-4"><i className="fa fa-envelope"></i></button><br />
+                            <button className="btn-circle disabled btn-xl btn-primary"><i className="fa fa-envelope"></i></button><br />
                             <span className="lead" style={{fontSize: "2em"}}>example@example.com</span>
                         </div>
                     </a>
                     <a href="javascript:void">
                         <div>
-                            <button className="btn-circle disabled btn-xl btn-primary mr-4"><i className="fa fa-map"></i></button><br />
+                            <button className="btn-circle disabled btn-xl btn-primary"><i className="fa fa-map"></i></button><br />
                             <span className="lead" style={{fontSize: "2em"}}>Nowhere<br />12345 Nowhere Ln, CA 54321</span><br />
                         </div>
                     </a>

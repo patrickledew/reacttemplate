@@ -1,8 +1,12 @@
 @import '~bootstrap/scss/bootstrap';
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
 @import './colors.scss';
+@import "./fonts.scss";
 .btn-primary {
     @include button-variant($primary, darken($primary, 7.5%), darken($primary, 10%), lighten($primary,5%), lighten($primary, 10%), darken($primary,30%));
+}
+.btn-secondary {
+    @include button-variant($secondary, darken($secondary, 7.5%), darken($secondary, 10%), lighten($secondary,5%), lighten($secondary, 10%), darken($secondary,30%));
 }
 
 .App>.container {
@@ -14,6 +18,7 @@
 
 
 body, html {
+    font-family: $font-family-base;
     //height: 100%;
     //width: 100%;
     //overflow-x: hidden;
@@ -71,6 +76,7 @@ hr {
     height: 70px;
     padding: 10px 16px;
     border-radius: 35px;
+    border-style: none;
     font-size: 34px;
     line-height: 1.33;
 }

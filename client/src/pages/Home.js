@@ -63,12 +63,12 @@ class Home extends Component {
                                 <center>
                                     <Link to="section-1" smooth={true} offset={-100} duration={800}>
                                         <button className="p-2 m-2 btn btn-lg btn-primary quick-button">
-                                            <i className="fas fa-users fa-lg"></i> About
+                                            <i className="fas fa-users fa-lg mr-1"></i> About
                                         </button>
                                     </Link>
                                     <Link to="section-2" smooth={true} duration={800}>
                                         <button className="p-2 m-2 btn btn-lg btn-secondary quick-button">
-                                            <i className="fas fa-dollar-sign fa-lg"></i> Contact
+                                            <i className="fas fa-envelope fa-lg mr-1"></i> Contact
                                         </button>
                                     </Link>
                                 </center>
@@ -76,16 +76,16 @@ class Home extends Component {
                     </div>
                     <section id="section-1" style={{marginBottom:"100px"}}>
                                 <div className="row p-5">
-                                    <div className="col-8">
+                                    <div className="col-lg-8">
                                         <h1 className="display-1">This is a template website.</h1>
                                         <p className="lead">It's meant for quickly and easily getting a website up and running for a customer. The process is simple: Customer requests a website, I show them some designs they might
-                                        like, and tailor them to their liking. This light themed website is easily customizable, and even provides some <a href="/api/hello">api endpoints</a> for extended functionality.</p>
+                                        like, and tailor them to their liking. This dark themed website is easily customizable, and even provides some <a href="/api/hello">api endpoints</a> for extended functionality.</p>
                                     </div>
                                 </div>
                     </section>
                     <section id="section-2">
-                                <div className="row py-5 pr-5">
-                                    <div className="col-8 ml-auto justify-content-end">
+                                <div className="row py-5 p-5">
+                                    <div className="col-lg-8 ml-auto justify-content-end">
                                         <h1 className="display-2">This isn't going to be the final product.</h1>
                                         <p className="lead ">I'm going to change this a bunch, add pages as needed, and fill it with information about the business/team/thing.</p>
                                     </div>
