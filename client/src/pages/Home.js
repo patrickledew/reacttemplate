@@ -6,6 +6,7 @@ import '../scss/Home.scss';
 class Home extends Component {
     constructor(props) {
         super(props);
+        console.log(props);
         const images = [
             'homebackground.jpg'
         ]
@@ -34,10 +35,14 @@ class Home extends Component {
         }, 2000);
     }
     componentDidMount() {
-        setTimeout((() => {
-            this.fadeImage(document.querySelector(".homeimage"));
-            setInterval(this.fadeImage.bind(this, document.querySelector(".homeimage")), 10000);
-        }).bind(this), 6000);
+        console.log(this.props);
+        if (this.props.cycleImages == true)
+        {
+            setTimeout((() => {
+                this.fadeImage(document.querySelector(".homeimage"));
+                setInterval(this.fadeImage.bind(this, document.querySelector(".homeimage")), 10000);
+            }).bind(this), 6000);
+        }
 
         this.state.images.forEach((picture) => { //preload images so they don't take time to load after fade-in starts
             const img = new Image();
@@ -76,16 +81,16 @@ class Home extends Component {
                     </div>
                     <section id="section-1" style={{marginBottom:"100px"}}>
                                 <div className="row p-5">
-                                    <div className="col-lg-8">
+                                    <div className="col-8">
                                         <h1 className="display-1">This is a template website.</h1>
                                         <p className="lead">It's meant for quickly and easily getting a website up and running for a customer. The process is simple: Customer requests a website, I show them some designs they might
-                                        like, and tailor them to their liking. This dark themed website is easily customizable, and even provides some <a href="/api/hello">api endpoints</a> for extended functionality.</p>
+                                        like, and tailor them to their liking. This light themed website is easily customizable, and even provides some <a href="/api/hello">api endpoints</a> for extended functionality.</p>
                                     </div>
                                 </div>
                     </section>
                     <section id="section-2">
-                                <div className="row py-5 p-5">
-                                    <div className="col-lg-8 ml-auto justify-content-end">
+                                <div className="row py-5 pr-5">
+                                    <div className="col-8 ml-auto justify-content-end">
                                         <h1 className="display-2">This isn't going to be the final product.</h1>
                                         <p className="lead ">I'm going to change this a bunch, add pages as needed, and fill it with information about the business/team/thing.</p>
                                     </div>
